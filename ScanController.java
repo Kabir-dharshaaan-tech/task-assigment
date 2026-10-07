@@ -1,5 +1,5 @@
 import java.util.*;
-
+//
 public class ScanController {
     private final List<Scan> scans = Collections.synchronizedList(new ArrayList<>());
     private volatile boolean isScanningActive = false;
