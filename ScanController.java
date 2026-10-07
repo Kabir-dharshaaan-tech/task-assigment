@@ -154,13 +154,13 @@ public class ScanController {
             System.out.println("Cancelled " + scan.getName());
             currentScan = null;
             stopCurrentScanRequested = false;
-            // Queue continues to next scan
+            
         } else {
             scan.setState(ScanState.COMPLETE);
             System.out.println("Completed " + scan.getName());
             currentScan = null;
 
-            // Pause scanning if pause was set to Yes
+            
             if (scan.isPauseAfter()) {
                 isScanningActive = false;
             }
